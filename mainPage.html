@@ -13,6 +13,18 @@
             border-style:dashed;
             border-color: rgb(0, 255, 0);
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns:auto auto auto auto auto;
+            background-color: rgb(0, 0, 255);
+            padding: 0px;
+        }
+        .grid-item {
+            background-color: rgba(0, 0, 255);
+            padding: 0px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -21,10 +33,14 @@
     <h3 style="margin: 0px 50px 20px;">A collection of all recorded logs, articles, tales and legends of the Isan people.</h3>
     <hr style="width:93%;text-align:center;">
 
-    <button class="button logs"><b>Historical Logs</b></button>
-    <button class="button articles"><b>Articles</b></button>
-    <button class="button system"><b>Caisa System</b></button>
-    <button class="button timeln"><b>Timeline</b></button>
-    <button class="button imgs"><b>Images</b></button>
+    <div class="grid-container">
+        <div class="grid-item"><button class="button logs"><b>Historical Logs</b></button></div>
+        <div class="grid-item"><button class="button articles"><b>Articles</b></button></div>
+        <div class="grid-item"><button class="button system"><b>Caisa System</b></button></div>
+        <div class="grid-item"><button class="button timeln"><b>Timeline</b></button></div>
+        <div class="grid-item"><button class="button imgs"><b>Images</b></button></div>
+    </div>
+
+    <hr style="width:93%;text-align:center;">
 </body>
 </html>
