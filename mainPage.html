@@ -25,6 +25,13 @@
             padding: 0px;
             text-align: center;
         }
+
+        .iframe-grid {
+            display: grid;
+            grid-template-columns:auto;
+            background-color: rgb(0, 0, 255);
+            padding: 0px;
+        }
     </style>
 </head>
 
@@ -34,13 +41,16 @@
     <hr style="width:93%;text-align:center;">
 
     <div class="grid-container">
-        <div class="grid-item"><button class="button logs"><b>Historical Logs</b></button></div>
-        <div class="grid-item"><button class="button articles"><b>Articles</b></button></div>
-        <div class="grid-item"><button class="button system"><b>Caisa System</b></button></div>
-        <div class="grid-item"><button class="button timeln"><b>Timeline</b></button></div>
-        <div class="grid-item"><button class="button imgs"><b>Images</b></button></div>
+        <div class="grid-item"><button class="button logs" onclick="document.location='logs.html'"><b>Historical Logs</b></button></div>
+        <div class="grid-item"><button class="button articles" onclick="document.location='articles.html'"><b>Articles</b></button></div>
+        <div class="grid-item"><button class="button system" onclick="document.location='solarsystm.html'"><b>Caisa System</b></button></div>
+        <div class="grid-item"><button class="button timeln" onclick="document.location='timeln.html'"><b>Timeline</b></button></div>
+        <div class="grid-item"><button class="button imgs" onclick="document.location='media.html'"><b>Media</b></button></div>
     </div>
 
     <hr style="width:93%;text-align:center;">
+    <div class="iframe-grid">
+        <div class="grid-item"><iframe src="Stories\openner.html" title="CAAI and ISA"></iframe></div>
+    </div>
 </body>
 </html>

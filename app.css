@@ -10,6 +10,12 @@ h3 {
     margin: 0px 50px;
 }
 
+p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px 50px;
+}
+
 body {
     background-color: blue;
 }
@@ -31,4 +37,10 @@ body {
   .button:hover{
     color: rgb(0, 255, 0);
     background-color: rgb(50, 50, 255);
+  }
+
+  iframe {
+    border: none;
+    width: 93%;
+    height: 500px;
   }
