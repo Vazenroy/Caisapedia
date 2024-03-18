@@ -17,13 +17,13 @@ p {
 }
 
 body {
-    background-color: rgb(0, 0, 166);
+    background-color: rgb(0, 0, 170);
 }
 
 .button {
     border: none;
     color: white;
-    background-color: blue;
+    background-color: rgb(0, 0, 170);
     padding: 5px 5px;
     text-align:center;
     text-decoration: none;
@@ -36,11 +36,24 @@ body {
 
   .button:hover{
     color: rgb(0, 255, 0);
-    background-color: rgb(50, 50, 255);
+    background-color: rgb(50, 50, 170);
   }
 
-  iframe {
+iframe {
     border: none;
     width: 93%;
     height: 500px;
-  }
+}
+
+.ttlG {
+  color: rgb(0, 220, 0);
+  font-weight: bolder;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.dialogue {
+  margin-bottom: 20px;
+}
