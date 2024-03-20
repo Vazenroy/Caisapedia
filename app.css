@@ -20,6 +20,25 @@ body {
     background-color: rgb(0, 0, 170);
 }
 
+.button {
+  border: none;
+  color: white;
+  background-color: rgb(0, 0, 170);
+  padding: 5px 5px;
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 50px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button:hover{
+  color: rgb(0, 255, 0);
+  background-color: rgb(50, 50, 170);
+}
+
 a {
     border: none;
     color: white;
@@ -56,4 +75,18 @@ iframe {
 
 .dialogue {
   margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.active {
+  background-color: rgb(50, 50, 255);
 }
