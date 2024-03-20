@@ -2,8 +2,29 @@
 <head>
     <link rel="stylesheet" href="app.css">
     <title>Historical Logs</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns:auto;
+            background-color: rgb(0, 0, 170);
+            padding: 0px;
+        }
+        .grid-item {
+            background-color: rgba(0, 0, 170);
+            padding: 0px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <h1>This will be the Table of Contents for Historical Logs</h1>
+    <div class="grid-container">
+        <div class="grid-item"><button class="button logs" onclick="setURL('Stories/orig0.html')"><b>Origins - Part 0</b></button></div>
+        <div class="grid-item"><button class="button articles" onclick="setURL('Stories/starcross.html')"><b>Starcrossed Lovers</b></button></div>
+        <div class="grid-item"><button class="button system" onclick="setURL('Stories/orig1.html')"><b>Origins - Part 1</b></button></div>
+        <div class="grid-item"><button class="button imgs" onclick="setURL('Stories/lqasMiss.html')"><b>The LQAS Exploration Mission</b></button></div>
+        <div class="grid-item"><button class="button timeln" onclick="setURL('Stories/orig2.html')"><b>Origins - Part 2</b></button></div>
+    </div>
+    <script src="setURLcode.js"></script>
+    <iframe id="mainframe"></iframe>
 </body>
 </html>

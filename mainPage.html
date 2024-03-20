@@ -14,23 +14,18 @@
             border-color: rgb(0, 220, 0);
         }
 
-        .grid-container {
-            display: grid;
-            grid-template-columns:auto auto auto auto auto;
-            background-color: rgb(0, 0, 170);
-            padding: 0px;
-        }
-        .grid-item {
-            background-color: rgba(0, 0, 170);
-            padding: 0px;
-            text-align: center;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
 
-        .iframe-grid {
-            display: grid;
-            grid-template-columns:auto;
-            background-color: rgb(0, 0, 170);
-            padding: 0px;
+        li {
+            display: inline;
+        }
+
+        .active {
+            background-color: rgb(50, 50, 255);
         }
     </style>
 </head>
@@ -40,17 +35,13 @@
     <h3 style="margin: 0px 50px 20px;">A collection of all recorded logs, articles, tales and legends of the Isan people.</h3>
     <hr style="width:93%;text-align:center;">
 
-    <div class="grid-container">
-        <div class="grid-item"><button class="button logs" onclick="document.location='logs.html'"><b>Historical Logs</b></button></div>
-        <div class="grid-item"><button class="button articles" onclick="document.location='articles.html'"><b>Articles</b></button></div>
-        <div class="grid-item"><button class="button system" onclick="document.location='solarsystm.html'"><b>Caisa System</b></button></div>
-        <div class="grid-item"><button class="button timeln" onclick="document.location='timeln.html'"><b>Timeline</b></button></div>
-        <div class="grid-item"><button class="button imgs" onclick="document.location='media.html'"><b>Media</b></button></div>
-    </div>
-
-    <hr style="width:93%;text-align:center;">
-    <div class="iframe-grid">
-        <div class="grid-item"><iframe src="Stories\openner.html" title="CAAI and ISA"></iframe></div>
-    </div>
+    <ul>
+        <li><a href="logs.html"><b>Historical Logs</b></a></li>
+        <li><a href="articles.html"><b>Articles</b></a></li>
+        <li><a href="solarsystm.html"><b>Caisa System</b></a></li>
+        <li><a href="timeln"><b>Timeline</b></a></li>
+        <li><a href="media.html"><b>Media</b></a></li>
+    </ul>
+    
 </body>
 </html>
