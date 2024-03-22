@@ -18,9 +18,15 @@
             background: rgb(255, 200, 0);
             position: absolute;
         }
-        .Xamare, .Simoule, .Calidis {
+        .Calidis {
+            top: 510px;
+            left: 510px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background: rgb(255, 125, 0);
             position: absolute;
-            border-radius: 50px;
+            animation: cOrbit 100s infinite linear;
         }
         .Xamare {
             top: 500px;
@@ -42,14 +48,77 @@
             position: absolute;
             animation: sOrbit 5s infinite linear;
         }
+        .Avia {
+            top: 487px;
+            left: 487px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgb(0, 255, 255);
+            position: absolute;
+            animation: aOrbit 25s infinite linear;
+        }
 
+        @keyframes cOrbit {
+            0% { transform: rotate(0deg) translateX(100px) rotate(0deg) }
+            100% { transform: rotate(360deg) translateX(100px) rotate(-360deg)}
+        }
         @keyframes xOrbit {
             0% { transform: rotate(0deg) translateX(200px) rotate(0deg) }
             100% { transform: rotate(360deg) translateX(200px) rotate(-360deg)}
         }
         @keyframes sOrbit {
-            0% { transform: rotate(0deg) translateX(230px) rotate(0deg) }
-            100% { transform: rotate(360deg) translateX(230px) rotate(-360deg)}
+            0% { transform: rotate(0deg) translateX(235px) rotate(0deg) }
+            100% { transform: rotate(360deg) translateX(235px) rotate(-360deg)}
+        }
+        @keyframes aOrbit {
+            0% { transform: rotate(0deg) translateX(450px) rotate(0deg) }
+            100% { transform: rotate(360deg) translateX(450px) rotate(-360deg)}
+        }
+
+        .cOrbitron {
+            top: 415px;
+            left: 415px;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border-style: solid;
+            background: transparent;
+            border-color: gray;
+            position: absolute;
+        }
+        .xOrbitron {
+            top: 313px;
+            left: 313px;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            border-style: solid;
+            background: transparent;
+            border-color: gray;
+            position: absolute;
+        }
+        .sOrbitron {
+            top: 279px;
+            left: 277px;
+            height: 470px;
+            width: 470px;
+            border-radius: 50%;
+            border-style: solid;
+            background: transparent;
+            border-color: gray;
+            position: absolute;
+        }
+        .aOrbitron {
+            top: 60px;
+            left: 60px;
+            height: 900px;
+            width: 900px;
+            border-radius: 50%;
+            border-style: solid;
+            background: transparent;
+            border-color: gray;
+            position: absolute;
         }
     </style>
 </head>
@@ -67,10 +136,15 @@
     <hr style="width:95%;text-align:center; border-style: dashed; border-color: rgb(0, 220, 0);">
 
     <div class="container">
-        <div class="Star"></div>
-        <div class="Calidis"></div>
-        <div class="Xamare"></div>
-        <div class="Simoule"></div>
+        <div class="Star"><button class="stButton"></button></div>
+                <div class="cOrbitron"></div>
+            <div class="Calidis"><button class="cButton"></button></div>
+                <div class="xOrbitron"></div>
+            <div class="Xamare"></div>
+                <div class="sOrbitron"></div>
+            <div class="Simoule"></div>
+                <div class="aOrbitron"></div>
+            <div class="Avia"></div>
     </div>
 
     <p class=ttlG>OPENING OBJECT FOLDER *ARTICLES*... (COMPLETE)</p>
