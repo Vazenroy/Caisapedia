@@ -1,18 +1,19 @@
 h1 {
     color: rgb(0, 220, 0);
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'SourceCode', 'Courier New';
+    font-weight: semibold;
     margin: 0px 50px;
 }
 
 h3 {
     color: rgb(255, 255, 255);
-    font-family:'Courier New', Courier, monospace;
+    font-family:'SourceCode', 'Courier New';
     margin: 0px 50px;
 }
 
 p {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'SourceCode', 'Courier New';
     margin: 0px 50px;
 }
 
@@ -31,7 +32,7 @@ body {
   font-size: 20px;
   margin: 0px 50px;
   cursor: pointer;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'SourceCode', 'Courier New';
 }
 
 .button:hover{
@@ -50,7 +51,7 @@ a {
     font-size: 20px;
     margin: 0px 50px;
     cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'SourceCode', 'Courier New';
   }
 
   a:hover{
