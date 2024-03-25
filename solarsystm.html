@@ -44,10 +44,132 @@
             height: 20px;
             width: 20px;
             border-radius: 50%;
-            background: rgb(255, 0, 255);
+            background: #ff00ff;
             position: absolute;
             animation: sOrbit 5s infinite linear;
         }
+        .smCenter, .sm1 {
+            position: absolute;
+            border-width: 0px 0px 0 0;
+            border-radius: 50%;
+        }
+        .smCenter {
+            top: 260px;
+            left: 260px;
+            width: 500px;
+            height: 500px;
+            animation: smCorbit 50s linear infinite;
+        }
+        .sm1 {
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            animation: smCorbit 10s linear infinite;
+            }
+        .sm2 {
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            animation: smCorbit 10s linear infinite;
+            }
+        .sm3 {
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            animation: smCorbit 10s linear infinite;
+            }
+        .sm4 {
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            animation: smCorbit 10s linear infinite;
+            }
+        .sm5 {
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            animation: smCorbit 10s linear infinite;
+            }
+        .sm6 {
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            animation: smCorbit 10s linear infinite;
+            }
+        .sm7 {
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            animation: smCorbit 10s linear infinite;
+            }
+            .smCenter::before, .sm1::before, .sm12::before, .sm3::before, .sm4::before, .sm5::before, .sm6::before, .sm7::before, {
+                content: '';    
+                position: absolute;
+                border-radius: 50%;
+            }
+            .smCenter::before {
+                top: 10px;
+                right: 10px;
+                width: 30px;
+                height: 30px;
+                background-color: gray;
+            }
+            .sm1::before {
+                top: 20px;
+                right: 20px;
+                width: 10px;
+                height: 10px;
+                background-color: purple;
+            }
+            .sm2::before {
+                top: 20px;
+                right: 20px;
+                width: 10px;
+                height: 10px;
+                background-color: purple;
+            }
+            .sm3::before {
+                top: 20px;
+                right: 20px;
+                width: 10px;
+                height: 10px;
+                background-color: purple;
+            }
+            .sm4::before {
+                top: 20px;
+                right: 20px;
+                width: 10px;
+                height: 10px;
+                background-color: purple;
+            }
+            .sm5::before {
+                top: 20px;
+                right: 20px;
+                width: 10px;
+                height: 10px;
+                background-color: purple;
+            }
+            .sm6::before {
+                top: 20px;
+                right: 20px;
+                width: 10px;
+                height: 10px;
+                background-color: purple;
+            }
+            .sm7::before {
+                top: 20px;
+                right: 20px;
+                width: 10px;
+                height: 10px;
+                background-color: purple;
+            }
         .Avia {
             top: 487px;
             left: 487px;
@@ -70,6 +192,9 @@
         @keyframes sOrbit {
             0% { transform: rotate(0deg) translateX(235px) rotate(0deg) }
             100% { transform: rotate(360deg) translateX(235px) rotate(-360deg)}
+        }
+        @keyframes smCorbit {
+            to { transform: rotate(360deg) }
         }
         @keyframes aOrbit {
             0% { transform: rotate(0deg) translateX(450px) rotate(0deg) }
@@ -136,13 +261,22 @@
     <hr style="width:95%;text-align:center; border-style: dashed; border-color: rgb(0, 220, 0);">
 
     <div class="container">
-        <div class="Star"><button class="stButton"></button></div>
+        <div class="Star"></div>
                 <div class="cOrbitron"></div>
-            <div class="Calidis"><button class="cButton"></button></div>
+            <div class="Calidis"></div>
                 <div class="xOrbitron"></div>
             <div class="Xamare"></div>
                 <div class="sOrbitron"></div>
             <div class="Simoule"></div>
+            <div class="smCenter">
+                <div class="sm1"></div>
+                <div class="sm2"></div>
+                <div class="sm3"></div>
+                <div class="sm4"></div>
+                <div class="sm5"></div>
+                <div class="sm6"></div>
+                <div class="sm7"></div>
+            </div>
                 <div class="aOrbitron"></div>
             <div class="Avia"></div>
     </div>
