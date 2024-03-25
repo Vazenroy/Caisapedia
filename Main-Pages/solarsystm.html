@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="../app.css">
     <title>Caisa System</title>
     
     <style>
@@ -65,51 +65,16 @@
             right: 0;
             width: 10px;
             height: 10px;
-            animation: smCorbit 10s linear infinite;
+            animation: smCorbit 1s linear infinite;
             }
         .sm2 {
             top: 0;
             right: 0;
             width: 10px;
             height: 10px;
-            animation: smCorbit 10s linear infinite;
+            animation: smCorbit 1s linear infinite;
             }
-        .sm3 {
-            top: 0;
-            right: 0;
-            width: 10px;
-            height: 10px;
-            animation: smCorbit 10s linear infinite;
-            }
-        .sm4 {
-            top: 0;
-            right: 0;
-            width: 10px;
-            height: 10px;
-            animation: smCorbit 10s linear infinite;
-            }
-        .sm5 {
-            top: 0;
-            right: 0;
-            width: 10px;
-            height: 10px;
-            animation: smCorbit 10s linear infinite;
-            }
-        .sm6 {
-            top: 0;
-            right: 0;
-            width: 10px;
-            height: 10px;
-            animation: smCorbit 10s linear infinite;
-            }
-        .sm7 {
-            top: 0;
-            right: 0;
-            width: 10px;
-            height: 10px;
-            animation: smCorbit 10s linear infinite;
-            }
-            .smCenter::before, .sm1::before, .sm12::before, .sm3::before, .sm4::before, .sm5::before, .sm6::before, .sm7::before, {
+            .smCenter::before, .sm1::before, .sm2::before {
                 content: '';    
                 position: absolute;
                 border-radius: 50%;
@@ -131,43 +96,8 @@
             .sm2::before {
                 top: 20px;
                 right: 20px;
-                width: 10px;
-                height: 10px;
-                background-color: purple;
-            }
-            .sm3::before {
-                top: 20px;
-                right: 20px;
-                width: 10px;
-                height: 10px;
-                background-color: purple;
-            }
-            .sm4::before {
-                top: 20px;
-                right: 20px;
-                width: 10px;
-                height: 10px;
-                background-color: purple;
-            }
-            .sm5::before {
-                top: 20px;
-                right: 20px;
-                width: 10px;
-                height: 10px;
-                background-color: purple;
-            }
-            .sm6::before {
-                top: 20px;
-                right: 20px;
-                width: 10px;
-                height: 10px;
-                background-color: purple;
-            }
-            .sm7::before {
-                top: 20px;
-                right: 20px;
-                width: 10px;
-                height: 10px;
+                width: 15px;
+                height: 15px;
                 background-color: purple;
             }
         .Avia {
@@ -248,11 +178,22 @@
     </style>
 </head>
 <body>
+    <script type="text/javascript">
+        var urls = [
+            "logs.html",
+            '../Secret-Pages/secret.html'
+        ];
+
+        function secretLog() {
+        var url = urls[Math.floor(Math.random()*1.03)];
+        window.location = url;
+        }
+    </script>
     <h1 style="margin: 50px 50px 20px;">Library of Caisa</h1>
     <h3 style="margin: 0px 50px 20px;">A collection of all recorded logs, articles, tales and legends of the Isan people.</h3>
     <hr style="width:95%;text-align:center; border-style: dashed; border-color: rgb(0, 220, 0);">
     <ul>
-        <li><a href="logs.html"><b>Historical Logs</b></a></li>
+        <li><a href="#" onClick="secretLog(); return false;"><b>Historical Logs</b></a></li>
         <li><a href="articles.html"><b>Articles</b></a></li>
         <li><a href="solarsystm.html"><b>Caisa System</b></a></li>
         <li><a href="timeln.html"><b>Timeline</b></a></li>
@@ -271,11 +212,6 @@
             <div class="smCenter">
                 <div class="sm1"></div>
                 <div class="sm2"></div>
-                <div class="sm3"></div>
-                <div class="sm4"></div>
-                <div class="sm5"></div>
-                <div class="sm6"></div>
-                <div class="sm7"></div>
             </div>
                 <div class="aOrbitron"></div>
             <div class="Avia"></div>
