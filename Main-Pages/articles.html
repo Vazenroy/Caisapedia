@@ -28,6 +28,17 @@
         window.location = url;
         }
     </script>
+    <script type="text/javascript">
+        var urls = [
+            "../Articles/vanishing.html",
+            '../Secret-Pages/vanishSecret.html'
+        ];
+
+        function vanishBreak() {
+        var url = urls[Math.floor(Math.random()*1.20)];
+        window.location = url;
+        }
+    </script>
     <h1 style="margin: 50px 50px 20px;">Library of Caisa</h1>
     <h3 style="margin: 0px 50px 20px;">A collection of all recorded logs, articles, tales and legends of the Isan people.</h3>
     <hr style="width:95%;text-align:center; border-style: dashed; border-color: rgb(0, 220, 0);">
@@ -50,6 +61,7 @@
     <h3 class="artType" style="margin-top: 20px; color: rgb(0, 220, 0);">Human Affairs</h3>
     <ul>
         <li class="a"><a style="margin-top: 10px;" class="artChoice" href="../Secret-Pages/404.html"><b>Celestial Enterprises</b></a></li>
+        <li class="a"><a class="artChoice" href="#" onClick="vanishBreak(); return false;"><b>The Vanishing</b></a></li>
     </ul>
 </body>
 </html>
