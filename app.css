@@ -10,6 +10,10 @@ h3 {
     font-family:'SourceCode', 'Courier New';
     margin: 0px 50px;
 }
+  h3.category {
+    font-size: 22px;
+    text-decoration: underline;
+  }
 
 p {
     color: white;
